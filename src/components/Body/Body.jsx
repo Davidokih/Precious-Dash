@@ -32,7 +32,9 @@ const Body = () => {
                     } }/>}
                   </Head>
                   {
-                      open ? (<Span >
+                      open ? (<Span onClick={ () => {
+                        setOpen(false);
+                    } }>
                           <MenuHold />
                       </Span>) : null
                   }
